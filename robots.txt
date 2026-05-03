@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://interactivepanelsindia.com/sitemap.xml
-
-# Block nothing — all pages should be indexed
