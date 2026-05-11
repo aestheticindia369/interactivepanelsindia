@@ -40,26 +40,48 @@
   }
 
   /* ── FAQ Accordion ──────────────────────────────────── */
-  document.querySelectorAll(".faq-q").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      var ans = btn.nextElementSibling;
-      var isOpen = btn.classList.contains("open");
-      // close all open
-      document.querySelectorAll(".faq-q.open").forEach(function(b){
-        b.classList.remove("open");
-        var icon = b.querySelector(".faq-icon");
-        if(icon) icon.textContent = "+";
-        var a = b.nextElementSibling;
-        if(a) a.classList.remove("open");
-      });
-      if(!isOpen){
-        btn.classList.add("open");
-        var icon = btn.querySelector(".faq-icon");
-        if(icon) icon.textContent = "×";
-        if(ans) ans.classList.add("open");
-      }
-    });
-  });
+document.querySelectorAll(".faq-q").forEach(function(btn){
+
+btn.addEventListener("click", function(){
+
+var ans = btn.nextElementSibling;
+var isOpen = btn.classList.contains("open");
+
+/* close all */
+document.querySelectorAll(".faq-q.open").forEach(function(b){
+
+b.classList.remove("open");
+
+var icon = b.querySelector(".faq-icon");
+if(icon) icon.textContent = "+";
+
+var a = b.nextElementSibling;
+
+if(a){
+a.classList.remove("open");
+a.style.maxHeight = null;
+}
+
+});
+
+/* open current */
+if(!isOpen){
+
+btn.classList.add("open");
+
+var icon = btn.querySelector(".faq-icon");
+if(icon) icon.textContent = "×";
+
+if(ans){
+ans.classList.add("open");
+ans.style.maxHeight = ans.scrollHeight + "px";
+}
+
+}
+
+});
+
+});
 
   /* ── Lead capture form ──────────────────────────────── */
   var form = document.getElementById("leadForm");
