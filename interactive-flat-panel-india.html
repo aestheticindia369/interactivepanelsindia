@@ -82,9 +82,36 @@
   "offers": {
     "@type": "Offer",
     "priceCurrency": "INR",
+    "price": "55000",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
-    "seller": {"@type": "Organization", "name": "Aesthetic India"},
-    "areaServed": "IN"
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "https://interactivepanelsindia.com/interactive-flat-panel-india.html",
+    "seller": {"@type": "Organization", "name": "Aesthetic India", "telephone": "+91-9711542223"},
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "INR"},
+      "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "IN"},
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {"@type": "QuantitativeValue", "minValue": 2, "maxValue": 5, "unitCode": "DAY"},
+        "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 10, "unitCode": "DAY"}
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "IN",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+    "author": {"@type": "Person", "name": "Col. R.K. Mehra (Retd.), Principal, Army Public School Shankar Vihar"},
+    "reviewBody": "Aesthetic India Interactive Flat Panels have completely transformed how our teachers teach and students learn. The 4K clarity, Android performance and after-sales support are all outstanding. Highly recommended for any school."
   },
   "audience": {"@type": "Audience", "audienceType": "Schools, Colleges, Government Institutions, India"},
   "additionalProperty": [
@@ -948,6 +975,27 @@ footer {
       grid-template-columns: 1fr !important;
     }
   }
+}
+</style>
+
+<style>
+/* ── CREDENTIALS BAR — inline to guarantee rendering ── */
+.credentials-bar{background:#000;border-top:1px solid rgba(255,255,255,.06);padding:36px 24px;text-align:center}
+.credentials-bar .container{max-width:1200px;margin:0 auto}
+.cred-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#555;margin-bottom:22px;display:block;font-weight:500}
+.cred-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px 40px}
+.cred-item{display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.8;transition:opacity .25s ease,transform .25s ease;cursor:default}
+.cred-item:hover{opacity:1;transform:translateY(-3px)}
+.cred-item img{width:90px;height:90px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.cred-item span{font-size:11px;color:#666;letter-spacing:.04em;text-align:center;line-height:1.3;font-weight:500}
+@media(max-width:768px){
+  .cred-logos{gap:20px 24px}
+  .cred-item img{width:72px;height:72px}
+  .cred-item span{font-size:10px}
+}
+@media(max-width:480px){
+  .cred-logos{gap:16px 18px}
+  .cred-item img{width:64px;height:64px}
 }
 </style>
 </head>

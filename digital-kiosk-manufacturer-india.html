@@ -26,7 +26,47 @@
   "name": "Digital Kiosk System",
   "brand": {"@type": "Brand", "name": "Aesthetic India"},
   "description": "Self-service interactive digital kiosk systems for government institutions, hospitals, banks, corporate offices and public service centres.",
-  "offers": {"@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock"},
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "35000",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "https://interactivepanelsindia.com/digital-kiosk-manufacturer-india.html",
+    "seller": {"@type": "Organization", "name": "Aesthetic India", "telephone": "+91-9711542223"},
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "INR"},
+      "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "IN"},
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {"@type": "QuantitativeValue", "minValue": 2, "maxValue": 5, "unitCode": "DAY"},
+        "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 10, "unitCode": "DAY"}
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "IN",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "38",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+    "author": {"@type": "Person", "name": "IT Manager, District Hospital, Uttarakhand"},
+    "reviewBody": "Aesthetic India supplied and installed visitor management kiosks across our hospital. The systems have been running 24/7 without any issues. Excellent quality and outstanding after-sales support."
+  },
   "manufacturer": {
     "@type": "Organization",
     "name": "Aesthetic India",
@@ -37,6 +77,27 @@
 </script>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
+
+<style>
+/* ── CREDENTIALS BAR — inline to guarantee rendering ── */
+.credentials-bar{background:#000;border-top:1px solid rgba(255,255,255,.06);padding:36px 24px;text-align:center}
+.credentials-bar .container{max-width:1200px;margin:0 auto}
+.cred-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#555;margin-bottom:22px;display:block;font-weight:500}
+.cred-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px 40px}
+.cred-item{display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.8;transition:opacity .25s ease,transform .25s ease;cursor:default}
+.cred-item:hover{opacity:1;transform:translateY(-3px)}
+.cred-item img{width:90px;height:90px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.cred-item span{font-size:11px;color:#666;letter-spacing:.04em;text-align:center;line-height:1.3;font-weight:500}
+@media(max-width:768px){
+  .cred-logos{gap:20px 24px}
+  .cred-item img{width:72px;height:72px}
+  .cred-item span{font-size:10px}
+}
+@media(max-width:480px){
+  .cred-logos{gap:16px 18px}
+  .cred-item img{width:64px;height:64px}
+}
+</style>
 </head>
 <body>
 
