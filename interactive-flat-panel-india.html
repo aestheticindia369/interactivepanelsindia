@@ -35,7 +35,7 @@
     "@type": "Organization",
     "name": "Aesthetic India",
     "telephone": "+91-9711542223",
-    "email": "aesthetic.india6@gmail.com",
+    "email": "info@interactivepanelsindia.com",
     "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN"},
     "url": "https://interactivepanelsindia.com"
   }
@@ -48,7 +48,7 @@
   "name": "Aesthetic India",
   "description": "India's trusted Interactive Flat Panel manufacturer and supplier. 4K Smart Boards, PTZ Cameras, Audio Systems, Digital Kiosks and Smart Classroom Solutions for government, defence and education sectors.",
   "telephone": "+91-9711542223",
-  "email": "aesthetic.india6@gmail.com",
+  "email": "info@interactivepanelsindia.com",
   "url": "https://interactivepanelsindia.com",
   "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"},
   "areaServed": ["Delhi", "Uttar Pradesh", "Uttarakhand", "India"],
@@ -956,8 +956,8 @@ footer {
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- OFFER STRIP -->
-<div class="offer-strip" role="alert">
-  🔥 LIMITED TIME: Special Institution Pricing — Up to 20% Off on Bulk Orders &nbsp;|&nbsp; Free On-Site Demo Available &nbsp;|&nbsp; <a href="https://api.whatsapp.com/send?phone=919711542223&text=Hello%20Aesthetic%20India%2C%20I%20want%20to%20know%20about%20the%20bulk%20offer%20on%20Interactive%20Flat%20Panels." target="_blank" rel="noopener">Claim Offer Now →</a>
+<div class="offer-strip" role="alert" id="offer-strip-bar">
+  🔥 <span id="offer-strip-text">LIMITED TIME: Special Institution Pricing — Up to 20% Off on Bulk Orders</span> &nbsp;|&nbsp; Free On-Site Demo Available &nbsp;|&nbsp; <a href="https://api.whatsapp.com/send?phone=919711542223&text=Hello%20Aesthetic%20India%2C%20I%20want%20to%20know%20about%20the%20bulk%20offer%20on%20Interactive%20Flat%20Panels." target="_blank" rel="noopener" id="offer-strip-link">Claim Offer Now →</a>
 </div>
 
 <header id="site-header">
@@ -1669,13 +1669,13 @@ footer {
         </div>
         <div style="margin-top:24px; background:var(--card); border:1px solid var(--border2); border-radius:var(--radius); padding:28px;" class="reveal">
           <div style="font-size:28px; margin-bottom:12px;">🏷️</div>
-          <h3 style="font-family:var(--ff-head); font-weight:800; color:var(--white); font-size:20px; margin-bottom:12px;">Limited Time Offer</h3>
-          <p style="font-size:14px; color:var(--muted); line-height:1.7; margin-bottom:20px;">Order before <strong style="color:var(--gold);">31st May 2026</strong> and get:<br>
+          <h3 style="font-family:var(--ff-head); font-weight:800; color:var(--white); font-size:20px; margin-bottom:12px;" id="offer-card-heading">Limited Time Offer</h3>
+          <p style="font-size:14px; color:var(--muted); line-height:1.7; margin-bottom:20px;" id="offer-card-body">Order before <strong style="color:var(--gold);" id="offer-deadline-1">31st May 2026</strong> and get:<br>
           ✅ Free wall mounting &amp; installation<br>
           ✅ Free teacher training (2 sessions)<br>
           ✅ Free 1-year AMC (worth ₹8,000–₹15,000)<br>
           ✅ Up to 20% off on orders of 5+ panels</p>
-          <a href="https://api.whatsapp.com/send?phone=919711542223&text=Hello%20Aesthetic%20India%2C%20I%20want%20to%20claim%20the%20May%202026%20offer%20on%20Interactive%20Flat%20Panels." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank" rel="noopener">🔥 Claim This Offer Now</a>
+          <a href="https://api.whatsapp.com/send?phone=919711542223&text=Hello%20Aesthetic%20India%2C%20I%20want%20to%20claim%20the%20May%202026%20offer%20on%20Interactive%20Flat%20Panels." class="btn btn-primary" style="width:100%;justify-content:center;" target="_blank" rel="noopener" id="offer-card-btn">🔥 Claim This Offer Now</a>
         </div>
       </div>
     </div>
@@ -2050,10 +2050,10 @@ footer {
 <section class="cta-section" aria-labelledby="cta-heading">
   <div class="container">
     <div class="cta-inner">
-      <div class="section-tag">Limited Time Offer</div>
-      <h2 class="section-title reveal" id="cta-heading">Get India's Best <span>Interactive Flat Panel Price</span><br>— Today Only</h2>
+      <div class="section-tag" id="cta-section-tag">Limited Time Offer</div>
+      <h2 class="section-title reveal" id="cta-heading">Get India's Best <span>Interactive Flat Panel Price</span><br>— <span id="cta-urgency-text">Today Only</span></h2>
       <p class="section-desc reveal" style="text-align:center; margin:0 auto 16px;">Send us your requirement and get a detailed quote with specifications, pricing and demo scheduling within 2 hours. No obligation. No spam.</p>
-      <div class="offer-pill reveal">🎁 Free Installation + Teacher Training + 1-Year AMC on Orders This Month</div>
+      <div class="offer-pill reveal" id="offer-pill-text">🎁 Free Installation + Teacher Training + 1-Year AMC on Orders This Month</div>
       <div class="cta-btns reveal">
         <a href="https://api.whatsapp.com/send?phone=919711542223&text=Hello%20Aesthetic%20India%2C%20I%20need%20pricing%20for%20Interactive%20Flat%20Panels.%20Please%20send%20your%20best%20quote%20with%20all%20offers." class="btn btn-green" target="_blank" rel="noopener" aria-label="WhatsApp for IFP quote">💬 WhatsApp Now — Get Best Price</a>
         <a href="tel:+919711542223" class="btn btn-primary">📞 Call +91-97115 42223</a>
@@ -2090,6 +2090,39 @@ footer {
   </div>
 </section>
 
+
+<!-- ===== CREDENTIALS / TRUST BADGES ===== -->
+<section class="credentials-bar">
+  <div class="container">
+    <p class="cred-label">Verified &amp; Registered Business — Trusted by 500+ Institutions Across India</p>
+    <div class="cred-logos">
+      <div class="cred-item" title="GST Registered — GSTIN: 07BZXPS3133H1ZU">
+        <img src="Images/aesthetic-india-gst-india-logo.webp" alt="GST Registered Aesthetic India GSTIN 07BZXPS3133H1ZU" width="90" height="90" loading="lazy">
+        <span>GSTIN: 07BZXPS3133H1ZU</span>
+      </div>
+      <div class="cred-item" title="MSME Udyam Registered">
+        <img src="Images/aesthetic-india-udyam-msme-india-logo.webp" alt="MSME Udyam Registered Aesthetic India" width="90" height="90" loading="lazy">
+        <span>MSME Udyam</span>
+      </div>
+      <div class="cred-item" title="GeM Registered Seller — Government e-Marketplace">
+        <img src="Images/aesthetic-india-gem-registered-india-logo.webp" alt="GeM Registered Seller Aesthetic India Government e-Marketplace" width="90" height="90" loading="lazy">
+        <span>GeM Registered</span>
+      </div>
+      <div class="cred-item" title="IEC Import Export Code Registered">
+        <img src="Images/aesthetic-india-import-export-india-logo.webp" alt="IEC Import Export Registered Aesthetic India" width="90" height="90" loading="lazy">
+        <span>IEC Registered</span>
+      </div>
+      <div class="cred-item" title="IndiaMART Registered Seller">
+        <img src="Images/aesthetic-india-indiamart-india-logo.webp" alt="IndiaMART Registered Seller Aesthetic India" width="90" height="90" loading="lazy">
+        <span>IndiaMART</span>
+      </div>
+      <div class="cred-item" title="Coming Soon on Amazon and Flipkart">
+        <img src="Images/aesthetic-india-amazon-flipkart-india-logo.webp" alt="Coming Soon on Amazon and Flipkart Aesthetic India" width="90" height="90" loading="lazy">
+        <span>Amazon &amp; Flipkart</span>
+      </div>
+    </div>
+  </div>
+</section>
 <footer id="site-footer" style="background:#0a0a0a; border-top:1px solid rgba(255,255,255,0.06); padding:60px 0 0;">
   <div class="container">
     <!-- LOGO + TAGLINE -->
@@ -2122,14 +2155,14 @@ footer {
         <span>📞</span> +91 97115 42223
       </a>
       <div style="width:1px; height:16px; background:rgba(255,255,255,0.12); flex-shrink:0;"></div>
-      <a href="mailto:aesthetic.india6@gmail.com" style="display:flex; align-items:center; gap:8px; font-size:14px; color:var(--muted); transition:color 0.2s;" onmouseover="this.style.color='#f5a623'" onmouseout="this.style.color='var(--muted)'">
-        <span>✉</span> aesthetic.india6@gmail.com
+      <a href="mailto:info@interactivepanelsindia.com" style="display:flex; align-items:center; gap:8px; font-size:14px; color:var(--muted); transition:color 0.2s;" onmouseover="this.style.color='#f5a623'" onmouseout="this.style.color='var(--muted)'">
+        <span>✉</span> info@interactivepanelsindia.com
       </a>
     </div>
 
     <!-- COPYRIGHT BAR -->
     <div style="border-top:1px solid rgba(255,255,255,0.06); padding:20px 0; text-align:center;">
-      <p style="font-size:13px; color:var(--muted);">© 2026 Aesthetic India. All Rights Reserved. | Digital Display Solutions for Government and Enterprise</p>
+      <p style="font-size:13px; color:var(--muted);">© 2026 Aesthetic India. All Rights Reserved. | GSTIN: 07BZXPS3133H1ZU | GeM Registered | MSME Certified | Digital Display Solutions for Government and Enterprise</p>
       <p style="font-size:11px; color:rgba(255,255,255,0.25); margin-top:6px;">Interactive Panel | Smart Board | Digital Podium | Digital Kiosk | Smart Classroom India | PTZ Camera | Audio Systems</p>
     </div>
   </div>
@@ -2140,7 +2173,7 @@ footer {
 <div class="contact-bar" role="navigation" aria-label="Quick contact">
   <a href="tel:+919711542223" class="contact-btn call">📞 Call Now</a>
   <a href="https://api.whatsapp.com/send?phone=919711542223" class="contact-btn whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
-  <a href="mailto:aesthetic.india6@gmail.com" class="contact-btn email">✉ Email Us</a>
+  <a href="mailto:info@interactivepanelsindia.com" class="contact-btn email">✉ Email Us</a>
 </div>
 
 <script>
