@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://interactivepanelsindia.com/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Smart Classroom Solution -->
   <url>
     <loc>https://interactivepanelsindia.com/smart-classroom-solution-india.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -23,15 +23,15 @@
   <!-- Interactive Flat Panel -->
   <url>
     <loc>https://interactivepanelsindia.com/interactive-flat-panel-india.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
-  <!-- Digital Kiosk -->
+  <!-- IR Touch Frame -->
   <url>
-    <loc>https://interactivepanelsindia.com/digital-kiosk-manufacturer-india.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://interactivepanelsindia.com/ir-touch-frame.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -39,7 +39,15 @@
   <!-- Digital Podium -->
   <url>
     <loc>https://interactivepanelsindia.com/digital-podium-manufacturer-india.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Digital Kiosk -->
+  <url>
+    <loc>https://interactivepanelsindia.com/digital-kiosk-manufacturer-india.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
